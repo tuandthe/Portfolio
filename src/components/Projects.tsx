@@ -1,4 +1,4 @@
-import { FaGithub, FaRocket, FaCode } from 'react-icons/fa';
+import { FaGithub, FaRocket, FaCode, FaExternalLinkAlt } from 'react-icons/fa';
 import { profileData } from '../data/profileData';
 
 const Projects = () => {
@@ -89,18 +89,32 @@ const Projects = () => {
                                 </div>
 
                                 {/* Links */}
-                                {project.github && (
+                                {(project.github || project.demo) && (
                                     <div className="flex gap-3 mt-6 pt-6 border-t border-gray-700/50">
-                                        <a
-                                            href={project.github}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="group/btn relative flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-gray-800 to-gray-900 hover:from-blue-600 hover:to-purple-600 text-white rounded-xl transition-all duration-300 text-sm font-medium shadow-lg hover:shadow-blue-500/50 hover:scale-105 border border-gray-700 hover:border-transparent overflow-hidden"
-                                        >
-                                            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover/btn:opacity-100 transition-opacity" />
-                                            <FaGithub className="relative z-10 group-hover/btn:rotate-12 transition-transform" />
-                                            <span className="relative z-10">Source Code</span>
-                                        </a>
+                                        {project.github && (
+                                            <a
+                                                href={project.github}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="group/btn relative flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-gray-800 to-gray-900 hover:from-blue-600 hover:to-purple-600 text-white rounded-xl transition-all duration-300 text-sm font-medium shadow-lg hover:shadow-blue-500/50 hover:scale-105 border border-gray-700 hover:border-transparent overflow-hidden"
+                                            >
+                                                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover/btn:opacity-100 transition-opacity" />
+                                                <FaGithub className="relative z-10 group-hover/btn:rotate-12 transition-transform" />
+                                                <span className="relative z-10">Source Code</span>
+                                            </a>
+                                        )}
+                                        {project.demo && (
+                                            <a
+                                                href={project.demo}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="group/btn relative flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-pink-600 to-orange-600 hover:from-pink-700 hover:to-orange-700 text-white rounded-xl transition-all duration-300 text-sm font-medium shadow-lg hover:shadow-pink-500/50 hover:scale-105 border border-transparent overflow-hidden"
+                                            >
+                                                <div className="absolute inset-0 bg-gradient-to-r from-pink-700 to-orange-700 opacity-0 group-hover/btn:opacity-100 transition-opacity" />
+                                                <FaExternalLinkAlt className="relative z-10 group-hover/btn:rotate-12 transition-transform" />
+                                                <span className="relative z-10">Live Demo</span>
+                                            </a>
+                                        )}
                                     </div>
                                 )}
                             </div>

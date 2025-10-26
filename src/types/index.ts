@@ -28,6 +28,7 @@ export interface Project {
     name: string;
     duration?: string;
     github?: string;
+    demo?: string;
     techStack: string[];
     description: string;
     features: string[];

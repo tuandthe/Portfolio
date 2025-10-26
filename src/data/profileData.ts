@@ -40,6 +40,20 @@ export const profileData: ProfileData = {
     ],
     projects: [
         {
+            name: "URL Shortener",
+            github: "https://github.com/tuandthe/URLShortener",
+            demo: "https://tuandthe.github.io/URLShortener/",
+            techStack: [".NET 8", "React", "TypeScript", "PostgreSQL", "RabbitMQ", "Ocelot", "Docker", "GitHub Actions"],
+            description: "Hệ thống rút gọn URL với kiến trúc microservices, tự động deploy bằng CI/CD.",
+            features: [
+                "Kiến trúc Microservices: API Gateway (Ocelot), URL Shortener Service, Redirect Service, Analytics Service.",
+                "Message Queue: RabbitMQ (CloudAMQP) để xử lý click events bất đồng bộ.",
+                "CI/CD: GitHub Actions tự động deploy backend lên Render.com và frontend lên GitHub Pages.",
+                "Analytics: Background worker consume events từ RabbitMQ để lưu trữ thống kê.",
+                "RESTful API với Swagger documentation, CORS enabled, HTTPS security."
+            ]
+        },
+        {
             name: "Mini ERP for Packaging Manufacturing and Supply",
             duration: "06/2025 - 09/2025",
             techStack: ["C#", "ASP.NET Core", "ReactJS", "SQL Server", "Azure Blob Storage", "JWT"],
