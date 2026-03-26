@@ -185,42 +185,43 @@ const Skills = () => {
                     </div>
                 </div>
 
-                {/* Certifications */}
-                <div className="group relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 shadow-2xl border border-gray-700/50 hover:border-purple-500/50 transition-all duration-500 overflow-hidden animate-scale-in">
-                    <div className="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-pink-600/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                {certifications.length > 0 && (
+                    <div className="group relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 shadow-2xl border border-gray-700/50 hover:border-purple-500/50 transition-all duration-500 overflow-hidden animate-scale-in">
+                        <div className="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-pink-600/5 opacity-0 group-hover:opacity-100 transition-opacity" />
 
-                    <div className="relative z-10">
-                        <div className="text-center mb-8">
-                            <h3 className="text-3xl font-bold text-white mb-2">
-                                🏆 Chứng chỉ
-                            </h3>
-                            <div className="w-16 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full" />
-                        </div>
+                        <div className="relative z-10">
+                            <div className="text-center mb-8">
+                                <h3 className="text-3xl font-bold text-white mb-2">
+                                    🏆 Chứng chỉ
+                                </h3>
+                                <div className="w-16 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full" />
+                            </div>
 
-                        <div className="grid md:grid-cols-2 gap-4">
-                            {certifications.map((cert, index) => (
-                                <a
-                                    key={index}
-                                    href={cert.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="group/cert relative bg-gray-900/60 backdrop-blur-sm rounded-xl p-5 hover:bg-gray-800/80 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/20 border border-gray-700/30 hover:border-purple-500/50 block"
-                                    style={{ animationDelay: `${index * 0.1}s` }}
-                                >
-                                    <div className="absolute top-3 right-3 text-3xl opacity-20 group-hover/cert:opacity-40 group-hover/cert:rotate-12 transition-all">
-                                        🎖️
-                                    </div>
-                                    <h4 className="text-lg font-bold text-white mb-2 pr-8">
-                                        {cert.name}
-                                    </h4>
-                                    <p className="text-gray-300 mb-1 font-medium text-sm">
-                                        {cert.issuer}
-                                    </p>
-                                </a>
-                            ))}
+                            <div className="grid md:grid-cols-2 gap-4">
+                                {certifications.map((cert, index) => (
+                                    <a
+                                        key={index}
+                                        href={cert.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="group/cert relative bg-gray-900/60 backdrop-blur-sm rounded-xl p-5 hover:bg-gray-800/80 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/20 border border-gray-700/30 hover:border-purple-500/50 block"
+                                        style={{ animationDelay: `${index * 0.1}s` }}
+                                    >
+                                        <div className="absolute top-3 right-3 text-3xl opacity-20 group-hover/cert:opacity-40 group-hover/cert:rotate-12 transition-all">
+                                            🎖️
+                                        </div>
+                                        <h4 className="text-lg font-bold text-white mb-2 pr-8">
+                                            {cert.name}
+                                        </h4>
+                                        <p className="text-gray-300 mb-1 font-medium text-sm">
+                                            {cert.issuer}
+                                        </p>
+                                    </a>
+                                ))}
+                            </div>
                         </div>
                     </div>
-                </div>
+                )}
             </div>
         </section>
     );

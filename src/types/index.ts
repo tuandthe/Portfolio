@@ -13,7 +13,7 @@ export interface Education {
     school: string;
     major: string;
     period: string;
-    gpa: string;
+    gpa?: string;
 }
 
 export interface Experience {
