@@ -36,6 +36,19 @@ export const profileData: ProfileData = {
             ]
         },
         {
+            company: "Agest Hà Nội",
+            position: "FullStack Developer",
+            period: "11/2025 - 04/2026",
+            project: "AGV LMS",
+            responsibilities: [
+                "Phát triển hệ thống quản lý học tập: quản lý khóa học, chấm điểm theo rubric và điểm danh.",
+                "Thiết kế kiến trúc cơ sở dữ liệu với PostgreSQL và Prisma ORM, triển khai từ đầu hơn 20 migrations.",
+                "Xây dựng logic frontend theo module, sử dụng custom hooks và đồng bộ UI bằng TailwindCSS + ShadCN UI.",
+                "Tích hợp MinIO (chuẩn S3) để quản lý tài nguyên học tập và triển khai hệ thống bằng Docker Compose.",
+                "Tự động hóa 6 luồng gửi email (kích hoạt tài khoản, ghi danh, báo cáo tiến độ) bằng Nodemailer + Pug templates."
+            ]
+        },
+        {
             company: "FPT Software Academy",
             position: "Backend Developer",
             period: "04/2024 - 07/2024",
