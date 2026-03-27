@@ -8,9 +8,18 @@ import {
     SiGithub,
     SiJira,
     SiPostman,
-    SiRedis
+    SiRedis,
+    SiNextdotjs,
+    SiTypescript,
+    SiTailwindcss,
+    SiPostgresql,
+    SiDocker,
+    SiLinux,
+    SiApachekafka,
+    SiMinio,
+    SiPrisma
 } from 'react-icons/si';
-import { FaJava, FaHtml5, FaCss3Alt, FaBootstrap, FaDatabase, FaCloud } from 'react-icons/fa';
+import { FaJava, FaHtml5, FaCss3Alt, FaBootstrap, FaDatabase, FaCloud, FaServer } from 'react-icons/fa';
 import { profileData } from '../data/profileData';
 
 const Skills = () => {
@@ -21,18 +30,28 @@ const Skills = () => {
         'Spring Boot': <SiSpringboot className="text-green-500" size={40} />,
         'C#': <SiSharp className="text-purple-500" size={40} />,
         '.NET Core': <SiSharp className="text-blue-500" size={40} />,
+        'RESTful API': <FaServer className="text-gray-400" size={40} />,
         'ReactJS': <SiReact className="text-cyan-400" size={40} />,
+        'Next.js': <SiNextdotjs className="text-white" size={40} />,
+        'TypeScript': <SiTypescript className="text-blue-500" size={40} />,
+        'TailwindCSS': <SiTailwindcss className="text-cyan-400" size={40} />,
         'JavaScript': <SiJavascript className="text-yellow-400" size={40} />,
         'HTML5': <FaHtml5 className="text-orange-500" size={40} />,
         'CSS3': <FaCss3Alt className="text-blue-500" size={40} />,
         'Bootstrap': <FaBootstrap className="text-purple-600" size={40} />,
         'SQL Server': <FaDatabase className="text-red-600" size={40} />,
+        'PostgreSQL': <SiPostgresql className="text-blue-400" size={40} />,
         'MySQL': <SiMysql className="text-blue-400" size={40} />,
+        'Docker': <SiDocker className="text-blue-500" size={40} />,
         'Git': <SiGit className="text-orange-600" size={40} />,
         'GitHub': <SiGithub className="text-gray-400" size={40} />,
+        'Linux': <SiLinux className="text-yellow-500" size={40} />,
         'Jira': <SiJira className="text-blue-500" size={40} />,
         'Postman': <SiPostman className="text-orange-500" size={40} />,
         'Redis': <SiRedis className="text-red-500" size={40} />,
+        'Kafka': <SiApachekafka className="text-white" size={40} />,
+        'MinIO': <SiMinio className="text-red-500" size={40} />,
+        'Prisma': <SiPrisma className="text-indigo-500" size={40} />,
         'Azure': <FaCloud className="text-blue-400" size={40} />,
     };
 
